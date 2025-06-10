@@ -6,30 +6,29 @@ A C-based command-line tool that detects textual plagiarism using techniques suc
 
 ## 📁 Project Structure
 
+```bash
 plagiarism_detector/
-├── build/ # Compiled object files and executables
-├── data/ # Input documents for plagiarism detection
-│ ├── document1.txt
-│ └── document2.txt
-├── include/ # Header files
-│ ├── cosine_similarity.h
-│ ├── file_io.h
-│ ├── ngram.h
-│ ├── preprocessing.h
-│ └── rabin_karp.h
-├── src/ # Source code
-│ ├── cosine_similarity.c
-│ ├── file_io.c
-│ ├── main.c
-│ ├── ngram.c
-│ ├── preprocessing.c
-│ └── rabin_karp.c
-├── plagiarism_detector.exe # Compiled executable (for Windows)
-└── compile.sh # Shell script to compile the project
----
+├── build/                   # Compiled object files and executables
+├── data/                    # Input documents for plagiarism detection
+│   ├── document1.txt
+│   └── document2.txt
+├── include/                 # Header files
+│   ├── cosine_similarity.h
+│   ├── file_io.h
+│   ├── ngram.h
+│   ├── preprocessing.h
+│   └── rabin_karp.h
+├── src/                     # Source code files
+│   ├── cosine_similarity.c
+│   ├── file_io.c
+│   ├── main.c
+│   ├── ngram.c
+│   ├── preprocessing.c
+│   └── rabin_karp.c
+├── plagiarism_detector.exe  # Compiled executable (for Windows)
+└── compile.sh               # Shell script to compile the project
 
 ## 🚀 Features
-
 Reads two text documents and detects similarities.
 
 ### Supported Algorithms:
