@@ -1,70 +1,82 @@
-# Plagiarism Detector 🔍
+# 🧠 Plagiarism Detector 🔍
 
-A C-based command-line tool that detects textual plagiarism using techniques like n-gram comparison, Rabin-Karp string matching, and cosine similarity.
+A C-based command-line tool that detects textual plagiarism using techniques such as **n-gram analysis**, **Rabin-Karp string matching**, and **cosine similarity**.
+
+---
 
 ## 📁 Project Structure
 
+```text
 plagiarism_detector/
-├── build/ # Compiled object files and executables
-├── data/ # Input documents for plagiarism detection
-│ ├── document1.txt
-│ └── document2.txt
-├── include/ # Header files
-│ ├── cosine_similarity.h
-│ ├── file_io.h
-│ ├── ngram.h
-│ ├── preprocessing.h
-│ └── rabin_karp.h
-├── src/ # Source code
-│ ├── cosine_similarity.c
-│ ├── file_io.c
-│ ├── main.c
-│ ├── ngram.c
-│ ├── preprocessing.c
-│ └── rabin_karp.c
-├── plagiarism_detector.exe # Compiled executable (Windows)
-└── compile.sh # Shell script to compile the project
----
+├── build/                    # Compiled object files and executables
+├── data/                     # Input documents for plagiarism detection
+│   ├── document1.txt
+│   └── document2.txt
+├── include/                  # Header files
+│   ├── cosine_similarity.h
+│   ├── file_io.h
+│   ├── ngram.h
+│   ├── preprocessing.h
+│   └── rabin_karp.h
+├── src/                      # Source code
+│   ├── cosine_similarity.c
+│   ├── file_io.c
+│   ├── main.c
+│   ├── ngram.c
+│   ├── preprocessing.c
+│   └── rabin_karp.c
+├── plagiarism_detector.exe   # Compiled executable (for Windows)
+└── compile.sh                # Shell script to compile the project
 
-## 🚀 Features
+🚀 Features
+Reads two text documents and detects similarities.
+Supports the following algorithms:
+N-gram analysis
+Cosine similarity
+Rabin-Karp string matching
 
-- Reads two text documents and detects similarities.
-- Uses:
-  - **N-gram analysis**
-  - **Cosine similarity**
-  - **Rabin-Karp string matching**
-- Classifies similarity as:
-  - Minimal
-  - Low
-  - Moderate
-  - High
+Classifies similarity levels as:
+🔹 Minimal
+🔸 Low
+🔶 Moderate
+🔴 High
 
----
-
-## 🛠️ How to Compile
-
-### Linux / WSL
+🛠️ How to Compile
+Linux / WSL
+Give execution permission and run the shell script:
 chmod +x compile.sh
 ./compile.sh
 
-You can also use gcc directly:
+Alternatively, compile manually using gcc:
 gcc src/*.c -Iinclude -o plagiarism_detector.exe
-📄 Sample Output
-==== PLAGIARISM DETECTION REPORT ====
-Similarity Score: 0.76 (76.00%)
-Matching n-grams: 38 out of 50
 
-Interpretation:
-MODERATE SIMILARITY (76.00%): There may be some copied content or similar phrasing.
-📚 Requirements
+✅ Requirements:
 GCC (or any C compiler)
-
 Bash (for compile.sh)
-
 A terminal environment (Linux, WSL, or Git Bash on Windows)
 
-🔓 License
-This project is licensed under the MIT License. Feel free to use, modify, and share!
+📄 Sample Output
+==== PLAGIARISM DETECTION REPORT ====
+
+==== Similarity Score: 0.76 (76.00%)
+Matching n-grams: 38 out of 50
+Interpretation: MODERATE SIMILARITY (76.00%)
+There may be some copied content or similar phrasing.
+
+📜 License
+This project is licensed under the MIT License — feel free to use, modify, and share!
 
 🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+Pull requests are welcome!
+For major changes, please open an issue first to discuss what you'd like to change.
+
+🙋‍♂️ Author
+Made with 💻 by Arnav Mishra
+
+---
+
+Let me know if you want:
+- A version with screenshots.
+- To add instructions for **Windows compilation** using an IDE.
+- Badges (e.g., build status, license, etc.).
+- Or anything else!
