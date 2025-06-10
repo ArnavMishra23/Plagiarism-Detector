@@ -1,0 +1,6 @@
+*.o
+*.exe
+build/
+*.out
+*.bin
+compile.sh
